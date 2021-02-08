@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Cronômetro</title>
+</head>
+
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .max-width {
+        max-width: 500px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+</style>
+<body>
+    <div class="max-width">
+        <button type="button" class="btn btn-success" onclick="start();">Iniciar</button>
+        <button type="button" class="btn btn-warning" onclick="pause();">Pausar</button>
+        <button type="button" class="btn btn-danger" onclick="stop();">Parar</button>
+        <h1 id="counter" class="contador">00:00:00</h1>
+    </div>
+    <script src="cronometro.js"></script>
+    
+</body>
+</html>
